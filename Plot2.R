@@ -10,7 +10,7 @@ pd2$datetime <- strptime(paste(pd2$Date3, pd2$Time3), "%d/%m/%Y %H:%M:%S")
 
 png(file = "Plot2.png", width = 480, height = 480, units = "px")
 
-plot (data = pd2, x= pd2$datetime, y = pd2$Global_active_power,
+plot (x= pd2$datetime, y = pd2$Global_active_power,
       ylab = 'Global Active power (kilowatts)',
       xlab ='  ',
       type = "l")

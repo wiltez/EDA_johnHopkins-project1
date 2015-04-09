@@ -15,7 +15,7 @@ pd2$Sub_metering_1 <- as.numeric(as.character(pd2$Sub_metering_1))
 pd2$Sub_metering_2 <- as.numeric(as.character(pd2$Sub_metering_2))
 
 png(file = "Plot3.png", width = 480, height = 480, units = "px")
-plot (data = pd2, x= pd2$datetime, y = pd2$Sub_metering_1,
+plot (x= pd2$datetime, y = pd2$Sub_metering_1,
       ylab = 'Energy sub metering',
       xlab ='  ',
       type = "l")
